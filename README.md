@@ -1,4 +1,4 @@
-# ignite-1-To-do
+# ignite-reactjs-1-To-do
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
   <img alt="Empty Screen" title="#todo" src="./.github/todo_empty.jpg">
