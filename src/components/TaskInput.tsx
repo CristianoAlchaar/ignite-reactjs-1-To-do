@@ -1,6 +1,6 @@
 import styles from './TaskInput.module.css'
 
-import { useRef , useEffect, FormEvent, useState, ChangeEvent} from 'react';
+import { FormEvent, useState, ChangeEvent} from 'react';
 
 import { v4 as uuid } from 'uuid';
 

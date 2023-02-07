@@ -22,7 +22,7 @@ export function Task(props:TaskProps){
         props.onChangeDoneValue(props.id);
     }
 
-    if(isChecked){  //foi feito
+    if(isChecked){  
         return(
             <div className={styles.Task}>
                     <label className={styles.lblContainer}>
@@ -34,7 +34,7 @@ export function Task(props:TaskProps){
                 </div>
         )
     }
-    else{ //não foi feito
+    else{ 
         return(
             <div className={styles.Task}>
                 <label className={styles.lblContainer}>

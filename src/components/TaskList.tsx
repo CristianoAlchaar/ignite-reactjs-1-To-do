@@ -1,7 +1,5 @@
 import { Task } from './Task'; 
 
-import { useState , useEffect } from 'react';
-
 import styles from './TaskList.module.css';
 
 import clipboardIcon from '../assets/clipboard.svg';
