@@ -29,4 +29,6 @@ body {
     background-color: var(--GRAY-600);
     color: var(--white);
     -webkit-font-smoothing: antialiased;
+    min-width: 400px;
+    overflow-x: auto;
 }

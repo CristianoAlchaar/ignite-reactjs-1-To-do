@@ -6,17 +6,6 @@ import styles from './TaskList.module.css';
 
 import clipboardIcon from '../assets/clipboard.svg';
 
-/*const tasks: Array<any> = [
-    {
-        isDone: false,
-        description: "Andar com o cão"
-    },
-    {
-        isDone: true,
-        description: "Comer batata"
-    }
-];*/
-
 interface task{
     id : string;
     isDone : boolean;

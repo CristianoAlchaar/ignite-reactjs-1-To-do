@@ -1,6 +1,7 @@
 import styles from './Task.module.css';
 
 import trashIcon from '../assets/trash.svg';
+import { useState } from 'react';
 
 interface TaskProps{
     id: string;
@@ -11,6 +12,7 @@ interface TaskProps{
 }
 
 export function Task(props:TaskProps){
+    const [isChecked, setIsChecked] = useState(props.isDone);
 
     function handleDeleteTask(){
         props.onDeleteTask(props.id);
@@ -20,11 +22,11 @@ export function Task(props:TaskProps){
         props.onChangeDoneValue(props.id);
     }
 
-    if(props.isDone == true){  //foi feito
+    if(isChecked){  //foi feito
         return(
             <div className={styles.Task}>
                     <label className={styles.lblContainer}>
-                        <input type="checkbox" onChange={handleChangeDoneTask} checked/>
+                        <input type="checkbox" onChange={handleChangeDoneTask} checked={isChecked}/>
                         <span className={styles.checkmark}></span>
                     </label>
                     <p className={styles.disabled}>{props.description}</p> 

@@ -12,22 +12,6 @@ import plusIcon from '../assets/plus.svg'
 export function TaskInput(){
 
     const [tasks, setTasks] = useState<{id: string; isDone: boolean; description: string}[]>([]);
-        /*{   
-            id: "1",
-            isDone: false,
-            description: "Andar com o cão"
-        },
-        {
-            id: "2",
-            isDone: true,
-            description: "Comer batata"
-        },
-        {
-            id: "3",
-            isDone: false,
-            description: "Lavar Roupa"
-        }*/
-
     const [newTaskText, setTaskText] = useState('');
 
     function handleCreateNewTask(event: FormEvent) {  
@@ -37,7 +21,7 @@ export function TaskInput(){
         setTaskText('');
     }
 
-    function handleNewTaskDescriptionChange(event: ChangeEvent<HTMLTextAreaElement>) {
+    function handleNewTaskDescriptionChange(event: ChangeEvent<HTMLInputElement>) {
         event.target.setCustomValidity('');
         setTaskText(event.target.value);
     }
@@ -64,12 +48,6 @@ export function TaskInput(){
         setTasks(tasksChanged);
     }
 
-    /*useEffect(() => {
-        const input = document.getElementById('taskInput');
-        console.log(input);
-        console.log(input?.innerHTML);
-    },[]);*/
-
     return(
         <>
             <form onSubmit={handleCreateNewTask}
@@ -77,7 +55,7 @@ export function TaskInput(){
                 <input type="text" 
                     name="taskDescriptionInput" 
                     placeholder="Adicione uma nova tarefa" 
-                    onChange={handleNewTaskDescriptionChange} 
+                    onChange={event => handleNewTaskDescriptionChange(event)} 
                     value={newTaskText}
                 />
                 <button type="submit">Criar<img src={plusIcon}/></button>
