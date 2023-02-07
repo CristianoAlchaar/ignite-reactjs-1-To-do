@@ -1,0 +1,51 @@
+div.TaskList{
+    margin: 2% auto;
+    width: 75%;
+    max-width: 736px;
+    text-align: center;
+}
+
+li{
+    list-style: none;
+}
+
+@media (max-width: 450px){
+    div.TaskList{
+        width: 100%;
+    }
+}
+
+div.TaskList div.UpperCount{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+div.TaskList div.UpperCount h3{
+    font-size: 1.15rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.TaskList div.UpperCount h3 span{
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0 0.5rem;
+}
+
+div.TaskList div.UpperCount h3 span.Blue{
+    color: var(--blue);
+}
+
+div.TaskList div.UpperCount h3 span.Purple{
+    color: var(--purple);
+}
+
+div.TaskList div.MainMessage{
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--GRAY-300);
+    line-height: 150%;
+}
+

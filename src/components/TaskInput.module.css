@@ -1,0 +1,53 @@
+form.addTaskForm{
+    width: 100vw;
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+form.addTaskForm input{
+    color: var(--white);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+    gap: 8px;
+
+    font-size: 1.25rem;
+
+    border: 1px solid var(--GRAY-700);
+    border-radius: 8px;
+    background: var(--GRAY-500);
+
+    flex-grow: 0.3;
+}
+
+form.addTaskForm input:focus {
+    border-color: var(--purple);
+}
+
+form.addTaskForm button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 8px;
+
+    /* Blue Dark */
+    background: var(--blue-dark);
+    border: none;
+    border-radius: 8px;
+    width: 5.625rem;
+    margin-left: 0.5%;
+
+    font-size: 1.25rem;
+    color: var(--GRAY-100);
+    
+    transition: filter 0.4s;
+}
+
+form.addTaskForm button:hover{
+    filter: brightness(1.2);
+}

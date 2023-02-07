@@ -1,0 +1,32 @@
+:root{
+    --white: #fff;
+    --purple: #8284FA;
+    --blue: #4EA8DE;
+    --blue-dark: #1E6F9F;
+    --GRAY-100: #F2F2F2;
+    --GRAY-300: #808080;
+    --GRAY-400: #333333;
+    --GRAY-500: #262626;
+    --GRAY-600: #1A1A1A;
+    --GRAY-700: #0D0D0D;
+    --GRAY-500: #262626;
+
+    --DELETE: #C70000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+*:focus-visible{outline: 0}
+
+body {
+    background-color: var(--GRAY-600);
+    color: var(--white);
+    -webkit-font-smoothing: antialiased;
+}
